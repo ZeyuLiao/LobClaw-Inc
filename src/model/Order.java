@@ -11,15 +11,15 @@ import java.time.LocalDate;
  * @author Ruolin
  */
 public class Order {
-    int id;
-    String orderNo;
-    int userId;
-    double totalPrice;
-    String paymentMethod;
-    LocalDate paymentTime;
-    int deliveryId;
-    String storeName;
-    boolean status;
+    private int id;
+    private String orderNo;
+    private int userId;
+    private double totalPrice;
+    private String paymentMethod;
+    private LocalDate paymentTime;
+    private int deliveryId;
+    private String storeName;
+    private boolean status;
 
     public int getId() {
         return id;

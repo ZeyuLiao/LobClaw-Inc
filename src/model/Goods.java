@@ -9,8 +9,8 @@ package model;
  * @author Ruolin
  */
 public class Goods {
-    int goodsId;
-    String goodsName;
+    private int goodsId;
+    private String goodsName;
 
     public int getGoodsId() {
         return goodsId;

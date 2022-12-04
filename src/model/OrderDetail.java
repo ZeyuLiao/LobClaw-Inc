@@ -9,11 +9,11 @@ package model;
  * @author Ruolin
  */
 public class OrderDetail {
-    int id;
-    int orderId;
-    int goodsId;
-    double goodsQuantity;
-    double unitPrice;
+    private int id;
+    private int orderId;
+    private int goodsId;
+    private double goodsQuantity;
+    private double unitPrice;
 
     public int getId() {
         return id;
