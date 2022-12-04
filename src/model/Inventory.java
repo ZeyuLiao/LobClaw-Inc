@@ -9,11 +9,11 @@ package model;
  * @author Ruolin
  */
 public class Inventory {
-    int id;
-    int storeId;
-    int goodsId;
-    double quantity;
-    double sellingPrice;
+    private int id;
+    private int storeId;
+    private int goodsId;
+    private double quantity;
+    private double sellingPrice;
 
     public int getId() {
         return id;

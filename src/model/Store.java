@@ -9,9 +9,8 @@ package model;
  * @author Ruolin
  */
 public class Store {
-    int storeId;
-    String storeName;
-    int supplyId;
+    private int storeId;
+    private String storeName;
 
     public int getStoreId() {
         return storeId;
@@ -29,18 +28,11 @@ public class Store {
         this.storeName = storeName;
     }
 
-    public int getSupplyId() {
-        return supplyId;
-    }
-
-    public void setSupplyId(int supplyId) {
-        this.supplyId = supplyId;
-    }
-
     @Override
     public String toString() {
-        return "Store{" + "storeId=" + storeId + ", storeName=" + storeName + ", supplyId=" + supplyId + '}';
+        return "Store{" + "storeId=" + storeId + ", storeName=" + storeName + '}';
     }
+
     
 
 }
