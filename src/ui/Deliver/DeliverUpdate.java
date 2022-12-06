@@ -2,22 +2,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
-package ui;
+package ui.Deliver;
 
+import ui.*;
 import ui.Deliver.DeliverPanel;
 
 /**
  *
  * @author ZeyuLiao
  */
-public class EmployeeLogin extends javax.swing.JDialog {
+public class DeliverUpdate extends javax.swing.JDialog {
 
     /**
      * Creates new form NewJDialog
      */
     private Entrance et;  
     
-    public EmployeeLogin(Entrance et,java.awt.Frame parent, boolean modal) {
+    public DeliverUpdate(Entrance et,java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         this.et = et;
         initComponents();
