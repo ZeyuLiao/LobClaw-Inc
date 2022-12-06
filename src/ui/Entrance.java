@@ -148,10 +148,14 @@ public class Entrance extends javax.swing.JFrame {
 
     private void jButtonCustomerLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCustomerLoginActionPerformed
         // TODO add your handling code here:
+        CustomerLogin cl = new CustomerLogin(this, rootPaneCheckingEnabled);
+        cl.dialog();
     }//GEN-LAST:event_jButtonCustomerLoginActionPerformed
 
     private void jButtonEmployeeLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEmployeeLoginActionPerformed
         // TODO add your handling code here:
+        EmployeeLogin el = new EmployeeLogin(this, rootPaneCheckingEnabled);
+        el.dialog();
     }//GEN-LAST:event_jButtonEmployeeLoginActionPerformed
 
     /**
