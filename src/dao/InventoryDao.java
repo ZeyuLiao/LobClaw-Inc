@@ -47,7 +47,25 @@ public class InventoryDao {
             s.setStoreId(rs.getInt("store_id"));
             s.setGoodsId(rs.getInt("goods_id"));
             s.setSellingPrice(rs.getDouble("selling_price"));
-            s.setQuantity(rs.getDouble("quantity"));
+            s.setQuantity(rs.getInt("quantity"));
+	}
+	closeConnection();
+	return s;
+    }
+    
+    public Inventory getInventoryByStoreIdAndGoodsId(int storeId,int goodsId) throws Exception{
+	Inventory s = null;
+	initConnection();
+	String sql = "SELECT * FROM Inventory WHERE store_id="+storeId+" AND goods_id="+goodsId;
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ResultSet rs = ps.executeQuery();
+	if (rs.next()){
+            s = new Inventory();
+            s.setId(rs.getInt("id"));
+            s.setStoreId(rs.getInt("store_id"));
+            s.setGoodsId(rs.getInt("goods_id"));
+            s.setSellingPrice(rs.getDouble("selling_price"));
+            s.setQuantity(rs.getInt("quantity"));
 	}
 	closeConnection();
 	return s;
@@ -66,7 +84,7 @@ public class InventoryDao {
             s.setStoreId(rs.getInt("store_id"));
             s.setGoodsId(rs.getInt("goods_id"));
             s.setSellingPrice(rs.getDouble("selling_price"));
-            s.setQuantity(rs.getDouble("quantity"));
+            s.setQuantity(rs.getInt("quantity"));
             list.add(s);
         }
         closeConnection();
@@ -86,7 +104,7 @@ public class InventoryDao {
             s.setStoreId(rs.getInt("store_id"));
             s.setGoodsId(rs.getInt("goods_id"));
             s.setSellingPrice(rs.getDouble("selling_price"));
-            s.setQuantity(rs.getDouble("quantity"));
+            s.setQuantity(rs.getInt("quantity"));
             list.add(s);
         }
         closeConnection();

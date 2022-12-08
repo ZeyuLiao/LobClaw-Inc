@@ -12,7 +12,7 @@ public class Inventory {
     private int id;
     private int storeId;
     private int goodsId;
-    private double quantity;
+    private int quantity;
     private double sellingPrice;
 
     public int getId() {
@@ -39,11 +39,11 @@ public class Inventory {
         this.goodsId = goodsId;
     }
 
-    public double getQuantity() {
+    public int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(double quantity) {
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 
