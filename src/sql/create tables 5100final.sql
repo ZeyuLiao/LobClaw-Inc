@@ -59,9 +59,13 @@ CREATE table if not EXISTS store_User(
 
 
 CREATE table if not EXISTS Customer(
-       Customer_id int PRIMARY KEY AUTO_INCREMENT not null,
-			 logID int not null,
-			 CONSTRAINT fk_customer_logid FOREIGN KEY (logID) REFERENCES SYSTEM_USERS(logID) ON UPDATE CASCADE ON DELETE CASCADE
+        Customer_id int PRIMARY KEY AUTO_INCREMENT not null,
+        logID int not null,
+	name VARCHAR ( 50 ) NOT NULL,
+	phone_number VARCHAR ( 50 ),
+	postal VARCHAR ( 7 ),
+	address VARCHAR ( 50 ),
+	CONSTRAINT fk_customer_logid FOREIGN KEY (logID) REFERENCES SYSTEM_USERS(logID) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE table if not EXISTS Supplier_User(
